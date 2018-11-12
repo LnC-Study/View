@@ -1,0 +1,39 @@
+body,h1,h2,h3,h4,h5 {
+    font-family: 'Stylish', sans-serif;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.navbar{
+    font-size:25px;
+    padding-left:30%;
+    padding-right:30%;
+    list-style-type:none;
+}
+
+.navbar > .nav-item > .nav-link {
+    color:black;
+}
+.navbar > .nav-item > .nav-link:hover {
+    color:grey;
+}
+.board{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.jumbotron{
+    background-color: lightgray;
+}
+
+.carousel{
+    height: 440px;
+}
+
+.boardSection{
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+}
