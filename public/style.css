@@ -6,6 +6,11 @@ body{
     background-color: #F9D3B9;
 }
 
+.btn-sq {
+    width: 75px !important;
+    height: 75px !important;
+    font-size: 20px;
+}
 
 .pnt{
     cursor: pointer;
