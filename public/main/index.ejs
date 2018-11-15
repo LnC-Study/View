@@ -14,53 +14,54 @@
 </head>
 
 <body>
+    <!--Top Menu-->
+    <% include topMenu.ejs%>
+
     <!-- Banner -->
-    <div class="jumbotron container-fluid text-center" style="padding-top: 5%; padding-bottom: 0px">
+    <div class="jumbotron container-fluid text-center">
         <!-- Introduction-->
         <h1><b>Lovely & Communication</b></h1>
-        <h3>경북대학교 컴퓨터학부 IT사회기여 동아리</h3>
-        <p> Welcome to the blog of L&C</p>
 
         <!-- Navigation-->
-        <% include navigation.ejs %>
-    </div>
+        <!--% include navigation.ejs %-->
 
-    <!-- Board-->
-    <div class="row board">
-        <div class="col-md-8">
-            <!-- Photos & Sections-->
-            <div class="card shadow p-3 mb-5 bg-white rounded">
-                <!-- Photos-->
-                <div class="card-body row">
-                    <div class="col-sm-7">
-                        <% include carousel.ejs %>
-                    </div>
-                    <!-- Sections-->
-                    <div class="col-sm-5">
-                        <% include sections.ejs %>
+
+        <!-- Board-->
+        <div class="row board">
+            <div class="col-md-8">
+                <!-- Photos & Sections-->
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <!-- Photos-->
+                    <div class="card-body row">
+                        <!--% include carousel.ejs %-->
+
+
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-4">
-            <!-- Notice card-->
-            <% include noticeCard.ejs %>
+            <div class="col-md-4">
+                <!-- Notice card-->
+                <% include noticeCard.ejs %>
 
-            <!-- Schedule-->
-            <% include scheduleCard.ejs%>
+
+                <!-- Schedule-->
+                <% include scheduleCard.ejs%>
+            </div>
+
+
+            <!-- Footer -->
+            <div class="row">
+
+            </div>
+            <!-- Notice Modal -->
+            <% include noticeModal.ejs%>
+
+
+            <!-- Schedule Modal -->
+            <% include scheduleModal.ejs%>
         </div>
     </div>
-
-    <!-- Footer -->
-    <div class="row">
-
-    </div>
-    <!-- Notice Modal -->
-    <% include noticeModal.ejs%>
-
-    <!-- Schedule Modal -->
-    <% include scheduleModal.ejs%>
 </body>
 
 </html>

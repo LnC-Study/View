@@ -1,16 +1,24 @@
 body,h1,h2,h3,h4,h5 {
-    font-family: 'Stylish', sans-serif;
+    font-family: a옛날목욕탕L;
 }
 
 body{
-    background-color: lightgray;
+    background-color: #F9D3B9;
+}
+
+
+.pnt{
+    cursor: pointer;
 }
 
 .navbar{
-    font-size:25px;
-    padding-left:30%;
-    padding-right:30%;
+    font-size:20px;
+    padding-left:20%;
+    padding-right:20%;
     list-style-type:none;
+}
+.navbar{
+    background-color: #F9D3B9;
 }
 
 .navbar > .nav-item > .nav-link {
@@ -25,7 +33,9 @@ body{
 }
 
 .jumbotron{
-    background-color: lightgray;
+    background-color: #F9D3B9;
+    padding-top: 1%;
+    padding-bottom: 0px;
 }
 
 .carousel{
@@ -36,4 +46,32 @@ body{
     height: 200px;
     padding: 10px;
     text-align: center;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
