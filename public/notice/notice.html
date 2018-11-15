@@ -10,10 +10,223 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="banner.js"></script>
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
+<!-- Banner -->
+<div class="jumbotron container-fluid text-center" style="padding-top: 5%; padding-bottom: 0px">
+    <!-- Introduction-->
+    <h1>
+        <b>Lovely & Communication</b>
+    </h1>
+    <h3>경북대학교 컴퓨터학부 IT사회기여 동아리</h3>
+    <p> Welcome to the blog of L&C</p>
+
+    <!-- Navigation-->
+    <div class="navbar">
+        <li class="nav-item">
+            <a class="nav-link" href="#section1">동아리소개</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section2">조직도</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section3">봉사활동</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section4">개발활동</a>
+        </li>
+
+        <!-- Dropdown-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">게시판</a>
+            <div class="dropdown-menu text-center">
+                <a href="#notice" class="dropdown-item" data-toggle="collapse">공지사항</a>
+                <a href="#freetalk" class="dropdown-item" data-toggle="collapse">자유게시판</a>
+            </div>
+        </li>
+    </div>
+</div>
+
+<!--Notice-->
+<div id="notice" class="container collapse show">
+    <div class="col-md-12">
+        <!-- Notice card-->
+        <div class="card shadow p-3 bg-white rounded">
+            <div class="card-body">
+                <h4 class="card-title">공지사항</h4>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col" class="text-center" style="width: 10%">게시물번호</th>
+                    <th scope="col" class="text-center" style="width: 75%">제목</th>
+                    <th scope="col" class="text-center" style="width: 5%">작성자</th>
+                    <th scope="col" class="text-center" style="width: 15%">업로드날짜</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row" class="text-center" style="width: 10%">1</th>
+                    <td class="text-center" style="width: 70%">
+                        <a href="#article1">
+                            I can't type korean fucking Eclipse
+                        </a>
+                    </td>
+                    <td class="text-center" style="width: 5%">Admin</td>
+                    <td class="text-center" style="width: 15%">2018-11-15</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-center" style="width: 10%">2</th>
+                    <td class="text-center" style="width: 70%">
+                        <a href="#article2">
+                            I hate web programming
+                        </a>
+                    </td>
+                    <td class="text-center" style="width: 5%">Admin</td>
+                    <td class="text-center" style="width: 15%">2018-11-15</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-center" style="width: 10%">3</th>
+                    <td class="text-center" style="width: 70%">
+                        <a href="#article3">
+                            Tomorrow is damn Thursday
+                        </a>
+                    </td>
+                    <td class="text-center" style="width: 5%">Admin</td>
+                    <td class="text-center" style="width: 15%">2018-11-15</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="text-right">
+                <button type="button" class="btn btn-primary btn-sm col-md-1">글쓰기</button>
+            </div>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <!-- another pagination items
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">
+                            <<
+                        </a>
+                    </li>
+                    -->
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <!-- another pagination items
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">
+                            >>
+                        </a>
+                    </li>
+                    -->
+                </ul>
+            </nav>
+            <!-- to be continue..
+            <div class="input-group col-md-4 mx-auto">
+                <input type="text" class="form-control mr-2" id="inlineFormInput" placeholder="제목">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary">검색</button>
+                </span>
+            </div>
+            -->
+        </div>
+    </div>
+</div>
+
+<!--Freetalk-->
+<div id="freetalk" class="container collapse">
+    <div class="col-md-12">
+        <!-- Notice card-->
+        <div class="card shadow p-3 bg-white rounded">
+            <div class="card-body">
+                <h4 class="card-title">자유게시판</h4>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col" class="text-center" style="width: 10%">게시물번호</th>
+                    <th scope="col" class="text-center" style="width: 75%">제목</th>
+                    <th scope="col" class="text-center" style="width: 5%">작성자</th>
+                    <th scope="col" class="text-center" style="width: 15%">업로드날짜</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row" class="text-center" style="width: 10%">1</th>
+                    <td class="text-center" style="width: 70%">
+                        <a href="#article1">
+                            This is bulletin board
+                        </a>
+                    </td>
+                    <td class="text-center" style="width: 5%">Admin</td>
+                    <td class="text-center" style="width: 15%">2018-11-15</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="text-right">
+                <button type="button" class="btn btn-primary btn-sm col-md-1">글쓰기</button>
+            </div>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <!-- another pagination items
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">
+                            <<
+                        </a>
+                    </li>
+                    -->
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <!-- another pagination items
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">
+                            >>
+                        </a>
+                    </li>
+                    -->
+                </ul>
+            </nav>
+            <!-- to be continue..
+            <div class="input-group col-md-4 mx-auto">
+                <input type="text" class="form-control mr-2" id="inlineFormInput" placeholder="제목">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary">검색</button>
+                </span>
+            </div>
+            -->
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
