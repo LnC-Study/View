@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L&C</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<!-- Banner -->
+<div class="jumbotron container-fluid text-center" style="padding-top: 5%; padding-bottom: 0px">
+    <!-- Introduction-->
+    <h1><b>Lovely & Communication</b></h1>
+    <!-- <h3>경북대학교 컴퓨터학부 IT사회기여 동아리</h3> -->
+    <p> Welcome to the blog of L&C</p>
+
+    <!-- Navigation-->
+    <% include ../main/navigation.ejs %>
+</div>
+
+<div class="row board">
+    <div class="board container-fluid shadow p-5 mb-5 bg-white rounded  " id="boardPage">
+        <div class="col-md-12 blog-main">
+
+            <div class="blog-post">
+
+                <!-- TITLE -->
+                <h2 class="blog-post-title">--년 -학기 - 센터 이름</h2>
+
+                <!-- 게시글 -->
+                <hr>
+                <p style="text-align: center;">
+                    <img src="" height="90%" width="90%">
+                </p>
+                <p><strong><li>참여 날짜 : </li></strong></p>
+                <p><strong><li>참여인원 : </li></strong></p>
+                <p><strong><li>봉사 내용 : </li></strong></p>
+                <p>설명 글</p>
+                <hr>
+                <pre><code>Example code block - 필요하면 쓰기...?</code></pre>
+
+                <div style="text-align: right">
+                    <!-- return to center list -->
+                    <a href="center.html" style = "padding-left:10px; padding-right: 10px">목록</a>
+                    <!-- top button -->
+                    <a href="#">TOP</a>
+                </div>
+
+            </div><!-- /.blog-post -->
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
