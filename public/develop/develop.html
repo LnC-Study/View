@@ -14,6 +14,102 @@
 </head>
 
 <body>
+    <!-- Banner -->
+    <div class="jumbotron container-fluid text-center" style="padding-top: 5%; padding-bottom: 0px">
+        <!-- Introduction-->
+        <h1><b>Lovely & Communication</b></h1>
+        <!-- <h3>경북대학교 컴퓨터학부 IT사회기여 동아리</h3> -->
+        <p> Welcome to the blog of L&C</p>
+
+        <!-- Navigation-->
+        <% include ../main/navigation.ejs %>
+    </div>
+    <div class="row board">
+        <div class="accordion container-fluid shadow p-3 mb-5 bg-white rounded  " id="accordionTap">
+            <!-- 18'2 card -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            2018년 2학기
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionTap">
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- project tap - 4:8 -->
+                            <div class="col-sm-4">
+                                <a href="http://localhost:63342/View-master/public/develop/projects.html"><img src="http://www.travelfreak.com/wp-content/uploads/2013/11/Walt-Disney-World-Castle-Wallpaper-.jpg" width="100%" height="100%"></a>
+                            </div>
+                            <div class="col-sm-8">
+                                <h2>프로젝트 이름</h2>
+                                <p>
+                                    간략한 설명
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <!-- project tap - 4:8 -->
+                            <div class="col-sm-4">
+                                <a href="http://localhost:63342/View-master/public/develop/projects.html"><img src="" height="100%" width="100%"></a>
+                            </div>
+                            <div class="col-sm-8">
+                                <h2>프로젝트 이름</h2>
+                                <p>
+                                    간략한 설명
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <!-- project tap - 4:8 -->
+                            <div class="col-sm-4">
+                                <a href="http://localhost:63342/View-master/public/develop/projects.html"><img src="" height="100%" width="100%"></a>
+                            </div>
+                            <div class="col-sm-8">
+                                <h2>프로젝트 이름</h2>
+                                <p>
+                                    간략한 설명
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 18'1 card -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2018년 1학기
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTap">
+                    <div class="card-body">
+
+                    </div>
+                </div>
+            </div>
+            <!-- 17'2 card -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            2017년 2학기
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTap">
+                    <div class="card-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
