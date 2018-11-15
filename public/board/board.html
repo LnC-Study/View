@@ -11,6 +11,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="displayBoard.js"></script>
+    <script type="text/javascript" src="writeNotice.js"></script>
+    <script type="text/javascript" src="writeFreetalk.js"></script>
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -51,6 +53,30 @@
                     </a>
                 </div>
             </li>
+        </div>
+    </div>
+
+    <!--write notice-->
+    <div id="writeNotice" class="board container collapse hide">
+        <div class="card col-md-15 shadow p-3 bg-white rounded">
+            <form>
+                <div class="form-group">
+                    <!-- title field -->
+                    <label class="control-label requiredField" for="title">제목</label>
+                    <input class="form-control" id="title" name="title" type="text" />
+                </div>
+                <div class="form-group">
+                    <!-- Message field -->
+                    <label class="control-label requiredField" for="message">내용</label>
+                    <textarea class="form-control" cols="40" id="message" name="message" rows="15"></textarea>
+                </div>
+                <div class="form-group text-right">
+                    <button class="btn" name="submit" type="reset">초기화</button>
+                    <!--type should be changed to submit-->
+                    <!--it's left as 'button' type just for visual effect-->
+                    <button class="btn btn-primary" name="submit" type="button" onclick="hideWriteNoticeForm('notice');">제출</button>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -104,7 +130,7 @@
                 </tbody>
             </table>
             <div class="text-right">
-                <button type="button" class="btn btn-primary btn-sm col-md-1">글쓰기</button>
+                <button type="button" class="btn btn-primary btn-sm col-md-1" onclick="showWriteNoticeForm('notice');">글쓰기</button>
             </div>
 
             <nav aria-label="Page navigation example">
@@ -151,6 +177,42 @@
         </div>
     </div>
 
+    <!--write freetalk-->
+    <div id="writeFreetalk" class="board container collapse hide">
+        <div class="card col-md-15 shadow p-3 bg-white rounded">
+            <form>
+                <div class="form-group">
+                    <!-- title field -->
+                    <label class="control-label requiredField" for="title">제목</label>
+                    <input class="form-control" id="title" name="title" type="text" />
+                </div>
+                <div class="form-group">
+                    <!-- username field-->
+                    <label class="col-sm-2 col-form-label" for="username">작성자</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control requiredField" id="username">
+                    </div>
+                    <!-- password field-->
+                    <label class="col-sm-2 col-form-label" for="password">비밀번호</label>
+                    <div class="col-sm-3">
+                        <input type="password" class="form-control requiredField" id="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <!-- Message field -->
+                    <label class="control-label requiredField" for="message">내용</label>
+                    <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+                </div>
+                <div class="form-group text-right">
+                    <button class="btn" name="submit" type="reset">초기화</button>
+                    <!--type should be changed to submit-->
+                    <!--it's left as 'button' type just for visual effect-->
+                    <button class="btn btn-primary" name="submit" type="button" onclick="hideWriteFreetalkForm('freetalk');">제출</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!--freetalk board-->
     <div id="freetalk" class="board container collapse">
         <!--freetalk card-->
@@ -181,7 +243,7 @@
                 </tbody>
             </table>
             <div class="text-right">
-                <button type="button" class="btn btn-primary btn-sm col-md-1">글쓰기</button>
+                <button type="button" class="btn btn-primary btn-sm col-md-1" onclick="showWriteFreetalkForm('freetalk');">글쓰기</button>
             </div>
 
             <nav aria-label="Page navigation example">
