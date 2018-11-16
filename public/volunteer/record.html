@@ -13,15 +13,28 @@
 </head>
 
 <body>
+<!--Top Menu-->
+<ul style="list-style: none; text-align: right; background-color: #2E353D;">
+    <li style="display: inline;"><a style="color: white; text-decoration: none;" href="#">로그인</a></li>
+    <li style="display: inline; color: white;">|</li>
+    <li style="display: inline;"><a style="color: white; text-decoration: none;" href="#">회원가입</a></li>
+    <li style="display: inline; color: white;">|</li>
+    <li style="display: inline;"><a style="color: white; text-decoration: none;" href="#">마이페이지</a></li>
+</ul>
+
 <!-- Banner -->
-<div class="jumbotron container-fluid text-center" style="padding-top: 5%; padding-bottom: 0px">
+<div class="jumbotron container-fluid text-center">
     <!-- Introduction-->
     <h1><b>Lovely & Communication</b></h1>
-    <!-- <h3>경북대학교 컴퓨터학부 IT사회기여 동아리</h3> -->
-    <p> Welcome to the blog of L&C</p>
 
     <!-- Navigation-->
-    <% include ../main/navigation.ejs %>
+    <!--% include navigation.ejs %-->
+    <div class="navbar">
+        <li class="nav-item"><a class="nav-link" href="#section1">동아리소개</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section2">연간일정</a></li>
+        <li class="nav-item"><a class="nav-link" href="volunteer.html">봉사활동</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section4">개발활동</a></li>
+    </div>
 </div>
 
 <div class="row board">

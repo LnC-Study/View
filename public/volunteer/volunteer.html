@@ -14,28 +14,43 @@
 </head>
 
 <body>
+<!--Top Menu-->
+<ul style="list-style: none; text-align: right; background-color: #2E353D;">
+    <li style="display: inline;"><a style="color: white; text-decoration: none;" href="#">로그인</a></li>
+    <li style="display: inline; color: white;">|</li>
+    <li style="display: inline;"><a style="color: white; text-decoration: none;" href="#">회원가입</a></li>
+    <li style="display: inline; color: white;">|</li>
+    <li style="display: inline;"><a style="color: white; text-decoration: none;" href="#">마이페이지</a></li>
+</ul>
+
 <!-- Banner -->
-<div class="jumbotron container-fluid text-center" style="padding-top: 5%; padding-bottom: 0px">
+<div class="jumbotron container-fluid text-center">
     <!-- Introduction-->
     <h1><b>Lovely & Communication</b></h1>
-    <h3>경북대학교 컴퓨터학부 IT사회기여 동아리</h3>
-    <p> Welcome to the blog of L&C</p>
 
     <!-- Navigation-->
-    <% include ../main/navigation.ejs %>
-</div>
+    <!--% include navigation.ejs %-->
+    <div class="navbar">
+        <li class="nav-item"><a class="nav-link" href="#section1">동아리소개</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section2">연간일정</a></li>
+        <li class="nav-item"><a class="nav-link" href="volunteer.html">봉사활동</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section4">개발활동</a></li>
+    </div>
 <div class="row board">
-    <div class="accordion container-fluid shadow p-3 mb-5 bg-white rounded  " id="accordionExample">
+    <div class="accordion container-fluid shadow p-3 mb-5 bg-white rounded" id="accordionExample">
+        <div class="row justify-content-end" style="margin-right: 1vh; margin-bottom: 2vh">
+            <button type="button" class="btn btn-dark bnt-sm" onclick="location.href='apply.html'">봉사 신청</button>
+        </div>
         <div class="card">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         2018년 2학기
                     </button>
                 </h5>
             </div>
 
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
 
                     <div class="row text-center float-center">
@@ -44,30 +59,21 @@
                             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
                             <p></p>
                             <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
+                            <p><a class="btn btn-secondary" href="center.html" role="button">더보기 »</a></p>
                         </div>
                         <div class="col-sm-4">
                             <!--image-->
                             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
                             <p></p>
                             <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
+                            <p><a class="btn btn-secondary" href="center.html" role="button">더보기 »</a></p>
                         </div>
                         <div class="col-sm-4">
                             <!--image-->
                             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
                             <p></p>
                             <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
+                            <p><a class="btn btn-secondary" href="center.html" role="button">더보기 »</a></p>
                         </div>
                     </div>
                     <hr>
@@ -77,33 +83,24 @@
                             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
                             <p></p>
                             <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
+                            <p><a class="btn btn-secondary" href="center.html" role="button">더보기 »</a></p>
                         </div>
                         <div class="col-sm-4">
                             <!--image-->
                             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
                             <p></p>
                             <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
+                            <p><a class="btn btn-secondary" href="center.html" role="button">더보기 »</a></p>
                         </div>
                         <div class="col-sm-4">
                             <!--image-->
                             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
                             <p></p>
                             <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
+                            <p><a class="btn btn-secondary" href="center.html" role="button">더보기 »</a></p>
                         </div>
                     </div>
-                    <div class="row"></div>
+                    <button type="button" class="btn btn-outline-secondary bnt-sm" style="float: right; margin-bottom: 2vh; margin-top: 1vh; margin-right: 1vh" onclick="location.href='edit_vol.html'">편집</button>
                 </div>
             </div>
         </div>
@@ -123,67 +120,24 @@
                             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
                             <p></p>
                             <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
+                            <p><a class="btn btn-secondary" href="center.html" role="button">더보기 »</a></p>
                         </div>
                         <div class="col-sm-4">
                             <!--image-->
                             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
                             <p></p>
                             <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
+                            <p><a class="btn btn-secondary" href="center.html" role="button">더보기 »</a></p>
                         </div>
                         <div class="col-sm-4">
                             <!--image-->
                             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
                             <p></p>
                             <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
+                            <p><a class="btn btn-secondary" href="center.html" role="button">더보기 »</a></p>
                         </div>
                     </div>
-                    <hr>
-                    <div class="row text-center float-center">
-                        <div class="col-sm-4">
-                            <!--image-->
-                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
-                            <p></p>
-                            <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
-                        </div>
-                        <div class="col-sm-4">
-                            <!--image-->
-                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
-                            <p></p>
-                            <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
-                        </div>
-                        <div class="col-sm-4">
-                            <!--image-->
-                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
-                            <p></p>
-                            <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row"></div>
+                    <button type="button" class="btn btn-outline-secondary bnt-sm" style="float: right; margin-bottom: 2vh; margin-top: 1vh; margin-right: 1vh" onclick="location.href='edit_vol.html'">편집</button>
                 </div>
             </div>
         </div>
@@ -203,71 +157,31 @@
                             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
                             <p></p>
                             <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
+                            <p><a class="btn btn-secondary" href="center.html" role="button">더보기 »</a></p>
                         </div>
                         <div class="col-sm-4">
                             <!--image-->
                             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
                             <p></p>
                             <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
+                            <p><a class="btn btn-secondary" href="center.html" role="button">더보기 »</a></p>
                         </div>
                         <div class="col-sm-4">
                             <!--image-->
                             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
                             <p></p>
                             <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
+                            <p><a class="btn btn-secondary" href="center.html" role="button">더보기 »</a></p>
                         </div>
                     </div>
-                    <hr>
-                    <div class="row text-center float-center">
-                        <div class="col-sm-4">
-                            <!--image-->
-                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
-                            <p></p>
-                            <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
-                        </div>
-                        <div class="col-sm-4">
-                            <!--image-->
-                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
-                            <p></p>
-                            <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
-                        </div>
-                        <div class="col-sm-4">
-                            <!--image-->
-                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
-                            <p></p>
-                            <h4>센터 이름</h4>
-                            <p>
-                                간략한 설명
-                            </p>
-                            <p><a class="btn btn-secondary" href="center.html" role="button">View details »</a></p>
-                        </div>
+                    <!--hr-->
                     </div>
-                    <hr>
-                    <div class="row"></div>
+                    <button type="button" class="btn btn-outline-secondary bnt-sm" style="float: right; margin-bottom: 2vh; margin-top: 1vh; margin-right: 1vh" onclick="location.href='edit_vol.html'">편집</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 
