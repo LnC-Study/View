@@ -1,12 +1,12 @@
 <div class="card shadow p-3 mb-5 bg-white rounded">
     <div class="card-body">
-        <a class="btn btn-sm btn-primary-outline float-right" href="#" role="button">+더보기</a>
+        <a class="btn btn-sm btn-primary-outline float-right" href="/volunteer" role="button">+더보기</a>
         <h4 class="card-title">봉사일정</h4>
     </div>
     <ul class="list-group list-group-flush pnt">
-        <li class="list-group-item" data-toggle="modal" data-target="#scheduleModal"><a href="#"></a>일정1</li>
-        <li class="list-group-item "data-toggle="modal" data-target="#scheduleModal"><a href="#"></a>일정2</li>
-        <li class="list-group-item" data-toggle="modal" data-target="#scheduleModal"><a href="#"></a>일정3</li>
+        <% for(var idx = 0; idx < volunteerData.length; idx++){%>
+            <li class="list-group-item" data-toggle="modal" data-target="#scheduleModal<%=idx%>">
+                <%=volunteerData[idx].title%></li>
+        <%}%>
     </ul>
-</div>
 </div>

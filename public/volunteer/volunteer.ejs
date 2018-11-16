@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- head, script, css files-->
+    <% include ../extern.ejs %>
+</head>
+
+<body>
+    <!--Top Menu-->
+    <% include ../base/topMenu.ejs%>
+    <!-- Banner -->
+    <div class="jumbotron container-fluid text-center">
+        <!-- Introduction-->
+        <h1><b>Lovely & Communication</b></h1>
+        <!-- Navigation-->
+        <% include ../base/navigation.ejs %>
+    </div>
+
+    <div class="row board">
+        <div class="accordion container-fluid shadow p-3 mb-5 bg-white rounded" id="accordionExample">
+            <!-- Apply volunteer-->
+            <div class="row justify-content-end" style="margin-right: 1vh; margin-bottom: 2vh">
+                <button type="button" class="btn btn-dark bnt-sm" onclick="location.href='apply.html'">봉사 신청</button>
+            </div>
+            <% include semester.ejs%>
+        </div>
+    </div>
+</body>
+
+</html>

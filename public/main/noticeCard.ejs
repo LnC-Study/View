@@ -1,14 +1,12 @@
 <div class="card shadow p-3 mb-5 bg-white rounded">
     <div class="card-body">
-        <a class="btn btn-sm btn-primary-outline float-right" href="#../notice/notice.html" role="button">+더보기</a>
+        <a class="btn btn-sm btn-primary-outline float-right" href="/notice" role="button">+더보기</a>
         <h4 class="card-title">공지사항</h4>
     </div>
     <ul class="list-group list-group-flush pnt">
-        <li class="list-group-item" data-toggle="modal" data-target="#noticeModal"><a href="#"></a>
-            [중요] 부르한 내일 1시부터 5시까지 봐주실분</li>
-        <li class="list-group-item "data-toggle="modal" data-target="#noticeModal"><a href="#"></a>
-            신암초 7회차 참여인원</li>
-        <li class="list-group-item" data-toggle="modal" data-target="#noticeModal"><a href="#"></a>
-            운암중학교 결과보고서 제출안내</li>
+        <% for(var idx = 0; idx < noticeData.length; idx++){%>
+        <li class="list-group-item" data-toggle="modal" data-target="#noticeModal<%=idx%>">
+            <%=noticeData[idx].title%></li>
+        <%}%>
     </ul>
 </div>

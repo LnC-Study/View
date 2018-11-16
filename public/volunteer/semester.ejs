@@ -1,0 +1,35 @@
+<% var semesters = Object.keys( data)%>
+<% for( var semIdx = 0; semIdx < semesters.length; semIdx++){%>
+    <div class="card">
+        <!-- Semester banner-->
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <%= semesters[semIdx]%>
+                </button>
+            </h5>
+        </div>
+
+        <!-- Semester contents contains centers-->
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <!--
+                <div class="row text-center float-center">
+                </div>
+                -->
+                <% for( var centIdx = 0; centIdx < semesters[semIdx].length; centIdx++){%>
+                    <% var _curCenter = semesters[semIdx] %>
+                    <!-- Center-->
+                    <div class="col-sm-4">
+                        <!--image-->
+                        <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="300" height="300">
+                        <p></p>
+                        <h4> <%= _curCenter.center%></h4>
+                        <p><a class="btn btn-secondary" href="/volunteer/<%=_curCenter.center%>" role="button">더보기 »</a></p>
+                    </div>
+                <%}%>
+                <button type="button" class="btn btn-outline-secondary bnt-sm" style="float: right; margin-bottom: 2vh; margin-top: 1vh; margin-right: 1vh" onclick="location.href='edit_vol.html'">편집</button>
+            </div>
+        </div>
+    </div>
+<%}%>

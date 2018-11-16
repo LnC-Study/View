@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head, script, css files-->
+    <% include ../extern.ejs %>
+</head>
+
+<body>
+    <!--Top Menu-->
+    <% include ../base/topMenu.ejs%>
+    <!-- Banner -->
+    <div class="jumbotron container-fluid text-center">
+        <!-- Introduction-->
+        <h1><b>Lovely & Communication</b></h1>
+        <!-- Navigation-->
+        <% include ../base/navigation.ejs %>
+    </div>
+
+    <div class="row board">
+        <div class="board container-fluid shadow p-5 mb-5 bg-white rounded  " id="boardPage">
+            <div class="col-md-12 blog-main">
+                <div class="blog-post">
+                    <!-- Title -->
+                    <h1 class="blog-post-title card-header"><%=project%></h1>
+                    <!-- Post -->
+                    <div class="container centered p-4">
+                        <p><strong><li>기간 : <%=date.semester%></li></strong></p>
+                        <p><strong><li>참여인원 : <%=personnel%>명</li></strong></p>
+                        <p><strong><li>팀장 : <%=leader%></li></strong></p>
+                    </div>
+                    <p>프로젝트 소개</p>
+                    <textarea cols="100" rows="12" style="font-family: '맑은 고딕'">
+                            <%=description%>
+                    </textarea>
+                    <!-- Top button -->
+                    <div style="text-align: right" class="p-2">
+                        <a href="#">TOP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

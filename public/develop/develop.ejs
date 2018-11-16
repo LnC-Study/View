@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- head, script, css files-->
+    <% include ../extern.ejs %>
+</head>
+
+<body>
+    <!--Top Menu-->
+    <% include ../base/topMenu.ejs %>
+    <!-- Banner -->
+    <div class="jumbotron container-fluid text-center">
+        <!-- Introduction-->
+        <h1><b>Lovely & Communication</b></h1>
+        <!-- Navigation-->
+        <% include ../base/navigation.ejs %>
+    </div>
+
+    <div class="row board">
+        <div class="accordion container-fluid shadow p-3 mb-5 bg-white rounded" id="accordionTap">
+            <% include semester.ejs %>
+        </div>
+    </div>
+</body>
+
+</html>

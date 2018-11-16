@@ -2,20 +2,20 @@
     <!-- Indicators-->
     <ol class="carousel-indicators">
         <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselIndicators" data-slide-to="2"></li>
+        <% for (var indicatorNumber = 1; indicatorNumber < carouselData.length; indicatorNumber++){%>
+            <li data-target="#carouselIndicators" data-slide-to="<%=indicatorNumber%>"></li>
+        <% } %>
     </ol>
     <!-- Images-->
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="main1.jpg" alt="First slide">
+            <img class="d-block w-100" src="<%=carouselData[0]%>">
         </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="main2.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="main3.jpg" alt="Third slide">
-        </div>
+        <% for (var idx = 1; idx < carouselData.length; idx++){%>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="<%=carouselData[idx]%>">
+            </div>
+        <%}%>
     </div>
     <!-- Next & Previous-->
     <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">

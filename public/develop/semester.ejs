@@ -1,0 +1,34 @@
+<% var semesters =  Object.keys( data) %>
+<% for( var semIdx = 0; semIdx < semesters.length; semIdx++){%>
+    <div class="card">
+        <!-- Semester banner-->
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <%= semesters[semIdx]%>
+                </button>
+            </h5>
+        </div>
+        <!-- Semester contents contains projects-->
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionTap">
+            <div class="card-body">
+                <% for( var prjIdx = 0; prjIdx < semesters[semIdx].length; prjIdx++){%>
+                    <% var _curPrj = semesters[semIdx]%>
+                    <!-- Project-->
+                    <div class="row">
+                        <div class="col-sm-3 text-center card-body">
+                            <a href="/develop/<%=_curPrj.project%>">
+                                <h2 style="text-align: center; color: black;"> <%= _curPrj.project%></h2>
+                            </a>
+                        </div>
+                        <div class="col-sm-8 card-header rounded">
+                            <p><%=_curPrj.description%></p>
+                        </div>
+                        <div class="col-sm-1"></div><!-- 이쁘게 하려고 비운 곳 -->
+                    </div>
+                    <hr>
+                <% } %>
+            </div>
+        </div>
+    </div>
+<% } %>

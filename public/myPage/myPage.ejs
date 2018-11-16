@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- head, script, css files-->
+    <% include ../extern.ejs %>
+</head>
+
+<body>
+    <!--Top Menu-->
+    <% include ../base/topMenu.ejs%>
+    <!-- Banner -->
+    <div class="jumbotron container-fluid text-center">
+        <!-- Introduction-->
+        <h1><b>Lovely & Communication</b></h1>
+        <!-- Navigation-->
+        <% include ../base/navigation.ejs %>
+    </div>
+
+    <!-- Board-->
+    <div class="row board">
+        <div class="card shadow p-3 mb-5 bg-white mx-auto">
+            <div class="card-body">
+                <h4 class="card-title">마이페이지</h4>
+            </div>
+
+            <div class=" col-md-12 col-lg-12 ">
+                <table class="table table-user-information">
+                    <tbody>
+                    <tr>
+                        <td>학번:</td>
+                        <td><%= user.privateInfo.studentID%></td>
+                    </tr>
+                    <tr>
+                        <td>아이디:</td>
+                        <td><%= user.email%></td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td>비밀번호:</td>
+                        <td>
+                            <input type="text" name="text" size="20" style="width:100%;">
+                        </td>
+                    </tr>
+                    -->
+                    <tr>
+                        <td>생년월일</td>
+                        <td><%= user.privateInfo.birthDate%></td>
+                    </tr>
+                    <tr>
+                        <td>1365아이디</td>
+                        <td><%= user.privateInfo.id1365%></td>
+                    </tr>
+
+                    <tr>
+                        <td>봉사활동내역</td>
+                        <td>
+                        <% for( var idx = 0; idx < user.volunteering.length; idx++){%>
+                            <span><%=user.volunteering[idx].semester%> <%=user.volunteering[idx].center%></span>
+                            <br>
+                        <%}%>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="col-md-12 text-center">
+                    <a href="#" class="btn btn-dark">수정하기</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
