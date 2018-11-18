@@ -1,0 +1,25 @@
+<div id="writeNotice" class="board container collapse hide">
+    <div class="card col-md-15 shadow p-3 bg-white rounded">
+        <form>
+            <div class="form-group">
+                <!-- title field -->
+                <label class="control-label requiredField" for="title">제목</label>
+                <input class="form-control" id="title" name="title" type="text" />
+            </div>
+            <div class="form-group">
+                <!-- Message field -->
+                <label class="control-label requiredField" for="message">내용</label>
+                <textarea class="form-control" cols="40" id="message" name="message" rows="15"></textarea>
+            </div>
+            <div class="form-group text-right">
+                <button class="btn" name="submit" type="reset">초기화</button>
+                <!--type should be changed to submit-->
+                <!--it's left as 'button' type just for visual effect-->
+                <!--
+                <button class="btn btn-primary" name="submit" type="button" onclick="hideWriteNoticeForm('notice');">제출</button>
+                -->
+                <button class="btn btn-primary" name="submit" type="button" onclick="submit_notice_to_server();">제출</button>
+            </div>
+        </form>
+    </div>
+</div>

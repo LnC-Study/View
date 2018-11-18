@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- head, script, css files-->
+    <% include ../base/extern.ejs %>
+    <script type="text/javascript" src="displayBoard.js"></script>
+    <script type="text/javascript" src="../notice/writeNotice.js"></script>
+    <script type="text/javascript" src="writeFreetalk.js"></script>
+</head>
+
+<body>
+    <!--Top Menu-->
+    <% include ../base/topMenu.ejs %>
+    <!-- Banner -->
+    <div class="jumbotron container-fluid text-center">
+        <!-- Introduction-->
+        <h1><b>Lovely & Communication</b></h1>
+        <!-- Navigation-->
+        <% include ../base/navigation.ejs %>
+    </div>
+
+    <!--freetalk board-->
+    <div id="freetalk" class="board container collapse">
+        <!--freetalk card-->
+        <div class="card col-md-15 shadow p-3 bg-white rounded">
+            <div class="card-body">
+                <h4 class="card-title">자유게시판</h4>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col" class="text-center" style="width: 10%">번호</th>
+                    <th scope="col" class="text-center" style="width: 70%">제목</th>
+                    <th scope="col" class="text-center" style="width: 5%">작성자</th>
+                    <th scope="col" class="text-center" style="width: 15%">업로드날짜</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <% for( var idx = 0; idx < boardData.length; idx++){%>
+                        <tr>
+                            <th scope="row" class="text-center" style="width: 10%"> boardData[i].number</th>
+                            <td class="text-center" style="width: 70%">
+                                <a data-toggle="modal" data-target="#boardModal<%=idx%>">
+                                    <%=boardData[idx].title%>
+                                </a>
+                            </td>
+                            <td class="text-center" style="width: 5%">boardData[i].writer</td>
+                            <td class="text-center" style="width: 15%">boardData[i].createdAt</td>
+                        </tr>
+                    <%}%>
+                </tbody>
+            </table>
+            <div class="text-right">
+                <button type="button" class="btn btn-primary btn-sm col-md-1" onclick="showWriteFreetalkForm('freetalk');">글쓰기</button>
+            </div>
+
+            <!-- Pagination-->
+        </div>
+    </div>
+
+    <!-- Write notice-->
+    <% include writeBoard.ejs %>
+
+    <!-- Post modals-->
+    <% include post.ejs %>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!--write freetalk-->
+<div id="writeFreetalk" class="board container collapse hide">
+    <div class="card col-md-15 shadow p-3 bg-white rounded">
+        <form>
+            <div class="form-group">
+                <!-- title field -->
+                <label class="control-label requiredField" for="title">제목</label>
+                <input class="form-control" id="title" name="title" type="text" />
+            </div>
+            <div class="form-group">
+                <!-- username field-->
+                <label class="col-sm-2 col-form-label" for="username">작성자</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control requiredField" id="username">
+                </div>
+                <!-- password field-->
+                <label class="col-sm-2 col-form-label" for="password">비밀번호</label>
+                <div class="col-sm-3">
+                    <input type="password" class="form-control requiredField" id="password">
+                </div>
+            </div>
+            <div class="form-group">
+                <!-- Message field -->
+                <label class="control-label requiredField" for="message">내용</label>
+                <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+            </div>
+            <div class="form-group text-right">
+                <button class="btn" name="submit" type="reset">초기화</button>
+                <!--type should be changed to submit-->
+                <!--it's left as 'button' type just for visual effect-->
+                <button class="btn btn-primary" name="submit" type="button" onclick="hideWriteFreetalkForm('freetalk');">제출</button>
+            </div>
+        </form>
+    </div>
+</div>
